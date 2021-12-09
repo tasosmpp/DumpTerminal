@@ -5,7 +5,8 @@ import uuid
 import json
 import sys
 
-client_id="-1";
+internet_on = True
+client_id="-1"
 broker="null"
 
 def on_connect(client, userdata, flags, rc):
@@ -16,9 +17,9 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("cslab/pc/"+client_id+"/restart")
     client.subscribe("cslab/pc/"+client_id+"/shutdown")
 
-#   Publish Client Info to the Brocker
-    data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node()}
-    client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=3), qos=0, retain=True)
+#   Publish Client Info to the Broker
+    data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node(),'internet_on':internet_on}
+    client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=True)
 
    
 
@@ -26,9 +27,17 @@ def on_message(client, userdata, msg):
     if(msg.topic == "cslab/pc/"+client_id+"/internet_on"):
         print("Internet on ")
         print(msg.payload)
+        internet_on = True
+        data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node(),'internet_on':internet_on}
+        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=True)
+        
     elif(msg.topic == "cslab/pc/"+client_id+"/internet_off"):
         print("Internet off ")
         print(msg.payload)
+        internet_on = False
+        data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node(),'internet_on':internet_on}
+        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=True)
+
     elif(msg.topic == "cslab/pc/"+client_id+"/restart"):
         print("Restart")
         print(msg.payload)
