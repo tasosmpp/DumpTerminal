@@ -29,14 +29,14 @@ def on_message(client, userdata, msg):
         print(msg.payload)
         internet_on = True
         data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node(),'internet_on':internet_on}
-        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=True)
-        
+        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=False)
+
     elif(msg.topic == "cslab/pc/"+client_id+"/internet_off"):
         print("Internet off ")
         print(msg.payload)
         internet_on = False
         data = {'status':'online','uuid':hex(uuid.getnode()),'name':platform.node(),'internet_on':internet_on}
-        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=True)
+        client.publish("cslab/pc/"+client_id+"/status",payload=json.dumps(data,indent=4), qos=0, retain=False)
 
     elif(msg.topic == "cslab/pc/"+client_id+"/restart"):
         print("Restart")
@@ -72,9 +72,11 @@ def __main__():
     
     client.loop_forever();
 
-
-print("Arg:",sys.argv[1]);
-client_id = sys.argv[1];
-broker = sys.argv[2];
-print(client_id);
-__main__()
+try:
+    print("Arg:",sys.argv[1]);
+    client_id = sys.argv[1];
+    broker = sys.argv[2];
+    print(client_id);
+    __main__()
+except IndexError:
+    print("Wrong Arguments")
