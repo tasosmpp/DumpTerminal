@@ -1,0 +1,3540 @@
+[
+    {
+        "id": "e7ca0333272a92fc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fdab170987ec8d7a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a4690fa1646dda44",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 42,
+                "sy": 42,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "19f6dfcc6eb4eebd",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "92715bbc6e465e59",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d293016ec57f9166",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "b295df88fcfb98fb",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "2dc708fb76893507",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8074e0c8fdbc4de5",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "339ba9dc9f201db1",
+        "type": "ui_group",
+        "name": "Group 6",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 6,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "9d44e659367a196d",
+        "type": "ui_group",
+        "name": "Group 7",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 7,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "13fbb4608766bfe5",
+        "type": "ui_group",
+        "name": "Group 8",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 8,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "205d5167af6bdfa3",
+        "type": "ui_group",
+        "name": "Group 9",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 9,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "29eaf60af502ec05",
+        "type": "ui_group",
+        "name": "Group 10",
+        "tab": "19f6dfcc6eb4eebd",
+        "order": 10,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f5499dac61836745",
+        "type": "mqtt in",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "topic": "cslab/pc/+/status",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "fdab170987ec8d7a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1700,
+        "wires": [
+            [
+                "914d75be29e2f434"
+            ]
+        ]
+    },
+    {
+        "id": "914d75be29e2f434",
+        "type": "switch",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cslab/pc/1/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/2/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/3/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/4/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/5/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/6/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/7/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/8/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/9/status",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cslab/pc/10/status",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 10,
+        "x": 310,
+        "y": 1900,
+        "wires": [
+            [
+                "8e826a9bf9798ad3"
+            ],
+            [
+                "967079dd1072ed19"
+            ],
+            [
+                "202184029e321e61"
+            ],
+            [
+                "6efb2c0fdf208145"
+            ],
+            [
+                "b0a8871dd737cb8b"
+            ],
+            [
+                "140a9a81dfbbcd78"
+            ],
+            [
+                "8233f995838e6a7e"
+            ],
+            [
+                "89f22ec7f42ffeeb"
+            ],
+            [
+                "cb1f70293d02cd3b"
+            ],
+            [
+                "6cf8c6c4d224dacf"
+            ]
+        ]
+    },
+    {
+        "id": "78fad01f0e1c003c",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "d293016ec57f9166",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1110,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b81c8cf6efc50633",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "d293016ec57f9166",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 440,
+        "wires": [
+            [
+                "c4ea5fa0ca526cf1"
+            ]
+        ]
+    },
+    {
+        "id": "7b3d7c64beb32c3a",
+        "type": "mqtt out",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "fdab170987ec8d7a",
+        "x": 1690,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "c4ea5fa0ca526cf1",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/2/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 420,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "967079dd1072ed19",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 640,
+        "wires": [
+            [
+                "78fad01f0e1c003c",
+                "12b969a203f62ed5",
+                "ab702b35a019fba2",
+                "b755f202d2648224"
+            ]
+        ]
+    },
+    {
+        "id": "12b969a203f62ed5",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "d293016ec57f9166",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ab702b35a019fba2",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "d293016ec57f9166",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c973099e66d9c238",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "d293016ec57f9166",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 480,
+        "wires": [
+            [
+                "e2977b33fbfa3f04"
+            ]
+        ]
+    },
+    {
+        "id": "e2a5edc2c0e15c53",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "d293016ec57f9166",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 520,
+        "wires": [
+            [
+                "e42be605b75d2481"
+            ]
+        ]
+    },
+    {
+        "id": "bc543d60b5f42ce5",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "d293016ec57f9166",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 560,
+        "wires": [
+            [
+                "6a5a5c857ed844d7"
+            ]
+        ]
+    },
+    {
+        "id": "e2977b33fbfa3f04",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/2/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 460,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "e42be605b75d2481",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/2/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 500,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "6a5a5c857ed844d7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/2/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 540,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "4524f879170e4f98",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC2",
+        "info": "",
+        "x": 1090,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "25f527755ef3345e",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "92715bbc6e465e59",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected1",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1110,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5387aa32bef9ad02",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "92715bbc6e465e59",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 60,
+        "wires": [
+            [
+                "1a929bbe605c5a5d"
+            ]
+        ]
+    },
+    {
+        "id": "1a929bbe605c5a5d",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/1/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 80,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "8e826a9bf9798ad3",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "25f527755ef3345e",
+                "c68d4699ce762c8d",
+                "e739ebe6858194ca",
+                "4962b2f5152116d5"
+            ]
+        ]
+    },
+    {
+        "id": "c68d4699ce762c8d",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "92715bbc6e465e59",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e739ebe6858194ca",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "92715bbc6e465e59",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "605b2ada0ce65f8e",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "92715bbc6e465e59",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 100,
+        "wires": [
+            [
+                "65665d24f9dcf7e7"
+            ]
+        ]
+    },
+    {
+        "id": "61ac7006423f2153",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "92715bbc6e465e59",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 140,
+        "wires": [
+            [
+                "8a3193fca272cb53"
+            ]
+        ]
+    },
+    {
+        "id": "b554dc88ed0eb220",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "92715bbc6e465e59",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 180,
+        "wires": [
+            [
+                "f8d860f9085619e7"
+            ]
+        ]
+    },
+    {
+        "id": "65665d24f9dcf7e7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/1/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 120,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "8a3193fca272cb53",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/1/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1400,
+        "y": 160,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "f8d860f9085619e7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/1/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1390,
+        "y": 200,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "02d371b6d4ed2d3a",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC1",
+        "info": "",
+        "x": 1090,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "c463ca9b00615986",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "b295df88fcfb98fb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1110,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "10bbc73b28ddfbc8",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "b295df88fcfb98fb",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 800,
+        "wires": [
+            [
+                "0730180923af0f7e"
+            ]
+        ]
+    },
+    {
+        "id": "0730180923af0f7e",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/3/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 780,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "202184029e321e61",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 980,
+        "wires": [
+            [
+                "c463ca9b00615986",
+                "bbc8435d039e5f90",
+                "d23aea9e2fb439af",
+                "cc6c1f9e91e40d58"
+            ]
+        ]
+    },
+    {
+        "id": "bbc8435d039e5f90",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "b295df88fcfb98fb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d23aea9e2fb439af",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "b295df88fcfb98fb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "99ea027433e5e623",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "b295df88fcfb98fb",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 840,
+        "wires": [
+            [
+                "a88e3b91dbcbbf8c"
+            ]
+        ]
+    },
+    {
+        "id": "f97b5f7d05d4b8e3",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "b295df88fcfb98fb",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 880,
+        "wires": [
+            [
+                "3c252843f18511f4"
+            ]
+        ]
+    },
+    {
+        "id": "641bfbd12f0d4334",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "b295df88fcfb98fb",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1080,
+        "y": 920,
+        "wires": [
+            [
+                "081b15f0870bcd5d"
+            ]
+        ]
+    },
+    {
+        "id": "a88e3b91dbcbbf8c",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/3/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 820,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "3c252843f18511f4",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/3/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 860,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "081b15f0870bcd5d",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/3/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 900,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "e1de59ef91a19cc3",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC3",
+        "info": "",
+        "x": 1090,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1301cfd13a4bbc99",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "2dc708fb76893507",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1090,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "c0d90576dc98992a",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "2dc708fb76893507",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1070,
+        "y": 1180,
+        "wires": [
+            [
+                "cbd69b280f9134c9"
+            ]
+        ]
+    },
+    {
+        "id": "cbd69b280f9134c9",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/4/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 1160,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "6efb2c0fdf208145",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 890,
+        "y": 1380,
+        "wires": [
+            [
+                "1301cfd13a4bbc99",
+                "85e52f4836e48681",
+                "f5488c6fea9a6345",
+                "d0b47f8d9e87c4fa"
+            ]
+        ]
+    },
+    {
+        "id": "85e52f4836e48681",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "2dc708fb76893507",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "f5488c6fea9a6345",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "2dc708fb76893507",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "89d0e0174b3f6b5e",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "2dc708fb76893507",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1070,
+        "y": 1220,
+        "wires": [
+            [
+                "fe074abc6d9dd6ba"
+            ]
+        ]
+    },
+    {
+        "id": "70fb68bfb70edba5",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "2dc708fb76893507",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 1260,
+        "wires": [
+            [
+                "1f922152896515b2"
+            ]
+        ]
+    },
+    {
+        "id": "7d961451a65e1d88",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "2dc708fb76893507",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1060,
+        "y": 1300,
+        "wires": [
+            [
+                "85b289039e9e1071"
+            ]
+        ]
+    },
+    {
+        "id": "fe074abc6d9dd6ba",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/4/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 1200,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "1f922152896515b2",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/4/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 1240,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "85b289039e9e1071",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/4/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 1280,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "5f5138d26d549753",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC4",
+        "info": "",
+        "x": 1070,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "f1316ea09d34106e",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "8074e0c8fdbc4de5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1050,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "1c60e924cb152dfd",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "8074e0c8fdbc4de5",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1030,
+        "y": 1560,
+        "wires": [
+            [
+                "958e205c2a9a6b77"
+            ]
+        ]
+    },
+    {
+        "id": "958e205c2a9a6b77",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/5/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 1540,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "b0a8871dd737cb8b",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 850,
+        "y": 1760,
+        "wires": [
+            [
+                "f1316ea09d34106e",
+                "22ff90df2494c64e",
+                "76acb9fb593b026e",
+                "b4080be71ac1aa20"
+            ]
+        ]
+    },
+    {
+        "id": "22ff90df2494c64e",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "8074e0c8fdbc4de5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "76acb9fb593b026e",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "8074e0c8fdbc4de5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "ca67e27f99f804d1",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "8074e0c8fdbc4de5",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1030,
+        "y": 1600,
+        "wires": [
+            [
+                "424f6c68bc904693"
+            ]
+        ]
+    },
+    {
+        "id": "c0f1ce30350e2215",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "8074e0c8fdbc4de5",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1020,
+        "y": 1640,
+        "wires": [
+            [
+                "cb7e06607aec81e7"
+            ]
+        ]
+    },
+    {
+        "id": "f206700362ddcc8b",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "8074e0c8fdbc4de5",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1020,
+        "y": 1680,
+        "wires": [
+            [
+                "625fd09c61ec7c4f"
+            ]
+        ]
+    },
+    {
+        "id": "424f6c68bc904693",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/5/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 1580,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "cb7e06607aec81e7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/5/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 1620,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "625fd09c61ec7c4f",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/5/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 1660,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "203fc6afeef8d18d",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC5",
+        "info": "",
+        "x": 1030,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "7475dc1be35f1b6c",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "9d44e659367a196d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1030,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "5af1f7786a02874a",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "9d44e659367a196d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 2280,
+        "wires": [
+            [
+                "09f16d38abaa86be"
+            ]
+        ]
+    },
+    {
+        "id": "09f16d38abaa86be",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/7/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 2260,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "8233f995838e6a7e",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 2480,
+        "wires": [
+            [
+                "7475dc1be35f1b6c",
+                "fb5f38629e2ff888",
+                "7dc4f12d80d5773c",
+                "ecec041e6215e0b1"
+            ]
+        ]
+    },
+    {
+        "id": "fb5f38629e2ff888",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "9d44e659367a196d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "7dc4f12d80d5773c",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "9d44e659367a196d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "e735f6816678904a",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "9d44e659367a196d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 2320,
+        "wires": [
+            [
+                "8b9f3b07ffbff6d1"
+            ]
+        ]
+    },
+    {
+        "id": "1cf828f944700428",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "9d44e659367a196d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 2360,
+        "wires": [
+            [
+                "6ea61db4584672d7"
+            ]
+        ]
+    },
+    {
+        "id": "4a04d343228979d6",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "9d44e659367a196d",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 2400,
+        "wires": [
+            [
+                "4374afa33f3e34df"
+            ]
+        ]
+    },
+    {
+        "id": "8b9f3b07ffbff6d1",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/7/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 2300,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "6ea61db4584672d7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/7/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 2340,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "4374afa33f3e34df",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/7/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 2380,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "fcbb395338303b4e",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC7",
+        "info": "",
+        "x": 1010,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "29d71c6f58c44c12",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "339ba9dc9f201db1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "42a58dd6384374ef",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "339ba9dc9f201db1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 1920,
+        "wires": [
+            [
+                "744ec13c91a31712"
+            ]
+        ]
+    },
+    {
+        "id": "744ec13c91a31712",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/6/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 1940,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "140a9a81dfbbcd78",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 810,
+        "y": 2120,
+        "wires": [
+            [
+                "29d71c6f58c44c12",
+                "a1863ccf4b79a4cc",
+                "618dcd9b77046528",
+                "deb014337d568fce"
+            ]
+        ]
+    },
+    {
+        "id": "a1863ccf4b79a4cc",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "339ba9dc9f201db1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "618dcd9b77046528",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "339ba9dc9f201db1",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "2ef9bc6677b6518b",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "339ba9dc9f201db1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 1960,
+        "wires": [
+            [
+                "d6f2cac9318ea7bc"
+            ]
+        ]
+    },
+    {
+        "id": "b87cf99e8f40f4cf",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "339ba9dc9f201db1",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 2000,
+        "wires": [
+            [
+                "69c9b033ac362c4f"
+            ]
+        ]
+    },
+    {
+        "id": "7ae9c078e0284e59",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "339ba9dc9f201db1",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 2040,
+        "wires": [
+            [
+                "79428f3181c0798f"
+            ]
+        ]
+    },
+    {
+        "id": "d6f2cac9318ea7bc",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/6/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 1980,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "69c9b033ac362c4f",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/6/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 2020,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "79428f3181c0798f",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/6/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 2060,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "9ddc87be5de0cd44",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "13fbb4608766bfe5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1030,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "75a9357dc7d6d96b",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "13fbb4608766bfe5",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 2640,
+        "wires": [
+            [
+                "e7293d7020ce8c2c"
+            ]
+        ]
+    },
+    {
+        "id": "e7293d7020ce8c2c",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/8/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 2620,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "89f22ec7f42ffeeb",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 2820,
+        "wires": [
+            [
+                "9ddc87be5de0cd44",
+                "cc0a19a01ed0aef6",
+                "2c48b05fae24d673",
+                "07b69bf58d0b2fc7"
+            ]
+        ]
+    },
+    {
+        "id": "cc0a19a01ed0aef6",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "13fbb4608766bfe5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "2c48b05fae24d673",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "13fbb4608766bfe5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 2880,
+        "wires": []
+    },
+    {
+        "id": "971d2eb04a6baee6",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "13fbb4608766bfe5",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 2680,
+        "wires": [
+            [
+                "6037f65ad2e95b79"
+            ]
+        ]
+    },
+    {
+        "id": "28b3bcb41b19186c",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "13fbb4608766bfe5",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 2720,
+        "wires": [
+            [
+                "343e33b550e69b47"
+            ]
+        ]
+    },
+    {
+        "id": "8f047c5bd3ee05df",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "13fbb4608766bfe5",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 2760,
+        "wires": [
+            [
+                "ca0aaccc59bc79f3"
+            ]
+        ]
+    },
+    {
+        "id": "6037f65ad2e95b79",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/8/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 2660,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "343e33b550e69b47",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/8/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 2700,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "ca0aaccc59bc79f3",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/8/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 2740,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "b34327beade706ec",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC8",
+        "info": "",
+        "x": 1010,
+        "y": 2600,
+        "wires": []
+    },
+    {
+        "id": "b7e8851ade6de758",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "205d5167af6bdfa3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "4165afd8108b0d1d",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "205d5167af6bdfa3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 3020,
+        "wires": [
+            [
+                "0c499dae4210c03f"
+            ]
+        ]
+    },
+    {
+        "id": "0c499dae4210c03f",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/9/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 3000,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "cb1f70293d02cd3b",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 810,
+        "y": 3220,
+        "wires": [
+            [
+                "b7e8851ade6de758",
+                "3a0da9b346fe825c",
+                "6da1f0e9c25c35af",
+                "a81f1549448ed7d7"
+            ]
+        ]
+    },
+    {
+        "id": "3a0da9b346fe825c",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "205d5167af6bdfa3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "6da1f0e9c25c35af",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "205d5167af6bdfa3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "fdac6f1a8c6b4e73",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "205d5167af6bdfa3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 990,
+        "y": 3060,
+        "wires": [
+            [
+                "f22dfc56af727f72"
+            ]
+        ]
+    },
+    {
+        "id": "184b0f7fcefa03a9",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "205d5167af6bdfa3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 3100,
+        "wires": [
+            [
+                "7d4b7c0e45dbdcb7"
+            ]
+        ]
+    },
+    {
+        "id": "5c2e002bc8221470",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "205d5167af6bdfa3",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 980,
+        "y": 3140,
+        "wires": [
+            [
+                "443d221a8fa0282b"
+            ]
+        ]
+    },
+    {
+        "id": "f22dfc56af727f72",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/9/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 3040,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "7d4b7c0e45dbdcb7",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/9/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 3080,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "443d221a8fa0282b",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/9/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 3120,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "c81d946f221965dd",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC9",
+        "info": "",
+        "x": 990,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "549f29ba56979679",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "29eaf60af502ec05",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Client Connected",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "a8cfdbf527f6ddab",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "29eaf60af502ec05",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 950,
+        "y": 3400,
+        "wires": [
+            [
+                "e9c11c14a7e2e572"
+            ]
+        ]
+    },
+    {
+        "id": "e9c11c14a7e2e572",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/10/internet_off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 3380,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "6cf8c6c4d224dacf",
+        "type": "json",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 770,
+        "y": 3600,
+        "wires": [
+            [
+                "549f29ba56979679",
+                "dde6a8f9c3856462",
+                "505b81b10a7ce998",
+                "4f961cfd6271a9ec"
+            ]
+        ]
+    },
+    {
+        "id": "dde6a8f9c3856462",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "29eaf60af502ec05",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload.name}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 930,
+        "y": 3600,
+        "wires": []
+    },
+    {
+        "id": "505b81b10a7ce998",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "29eaf60af502ec05",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Uuid",
+        "format": "{{msg.payload.uuid}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 930,
+        "y": 3640,
+        "wires": []
+    },
+    {
+        "id": "276bf0d20c4838eb",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "29eaf60af502ec05",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Internet ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "internet_on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 950,
+        "y": 3440,
+        "wires": [
+            [
+                "fb7310e67d1fd760"
+            ]
+        ]
+    },
+    {
+        "id": "e0dc4298b1e77101",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "29eaf60af502ec05",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 940,
+        "y": 3480,
+        "wires": [
+            [
+                "65529fb25f836280"
+            ]
+        ]
+    },
+    {
+        "id": "dc4fe11fb5e305d3",
+        "type": "ui_button",
+        "z": "e7ca0333272a92fc",
+        "name": "",
+        "group": "29eaf60af502ec05",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "restart",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 940,
+        "y": 3520,
+        "wires": [
+            [
+                "e154d2e4d4d92919"
+            ]
+        ]
+    },
+    {
+        "id": "fb7310e67d1fd760",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "internet_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/10/internet_on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 3420,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "65529fb25f836280",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "shutdown",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/10/shutdown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 3460,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "e154d2e4d4d92919",
+        "type": "change",
+        "z": "e7ca0333272a92fc",
+        "name": "restart",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "cslab/pc/10/restart",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 3500,
+        "wires": [
+            [
+                "7b3d7c64beb32c3a"
+            ]
+        ]
+    },
+    {
+        "id": "b7a4eade8fece10e",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC10",
+        "info": "",
+        "x": 950,
+        "y": 3360,
+        "wires": []
+    },
+    {
+        "id": "1b94130fb55dc2de",
+        "type": "comment",
+        "z": "e7ca0333272a92fc",
+        "name": "PC6",
+        "info": "",
+        "x": 990,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "4962b2f5152116d5",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "92715bbc6e465e59",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1100,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b755f202d2648224",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "d293016ec57f9166",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1090,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "cc6c1f9e91e40d58",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "b295df88fcfb98fb",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1090,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "d0b47f8d9e87c4fa",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "2dc708fb76893507",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1070,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "b4080be71ac1aa20",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "8074e0c8fdbc4de5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1030,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "deb014337d568fce",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "339ba9dc9f201db1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "ecec041e6215e0b1",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "9d44e659367a196d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "07b69bf58d0b2fc7",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "13fbb4608766bfe5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1010,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "a81f1549448ed7d7",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "205d5167af6bdfa3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "4f961cfd6271a9ec",
+        "type": "ui_text",
+        "z": "e7ca0333272a92fc",
+        "group": "29eaf60af502ec05",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Internet On",
+        "format": "{{msg.payload.internet_on}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 950,
+        "y": 3680,
+        "wires": []
+    }
+]
